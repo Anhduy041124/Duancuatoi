@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo.png">
+<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+<title>Trang du lịch  </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+<!-- Nucleo Icons -->
+<link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/84cbb96b6b.js" crossorigin="anonymous"></script>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<!-- CSS Files -->
+<link id="pagestyle" href="./assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+<script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+</head>
+
+<body ng-app="myapp" class="index-page bg-dark" >
+  <!-- <a href="#!SanPhamchitiet">SanPhamchitiet</a> 
+  <a href="#!LienHe">Liên hệ</a>
+  <a href="#!3">Khác</a> -->
+  <!-- Navbar -->
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+  <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/logo.png" alt="Logo" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center"  href="index.html">
+              <i class=" opacity-6 me-2 text-md"><i class="fa-solid fa-house"></i></i> Trang chủ
+            </a>
+            <div class="dropdown-menu "></div>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons opacity-6 me-2 text-md">view_day</i> Tours
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
+              <div class="d-none d-lg-block">
+                  <ul class="list-group">
+                    <li class="nav-item list-group-item border-0 p-0">
+                      <a class="dropdown-item py-2 ps-3 border-radius-md" href="#!sanpham">
+                      <h6 class="dropdown-header text-primary font-weight-bolder d-flex justify-content-center align-items-center p-0">
+                        <i class="fa-solid fa-v"></i><i class="fa-solid fa-n"></i>&nbsp;
+                        Tour Trong Nước</h6>
+                    </a>
+                    </li>
+                    <li class="nav-item list-group-item border-0 p-0">
+                      <a class="dropdown-item py-2 ps-3 border-radius-md" href="sanphamnuocngoai.html">
+                        <h6 class="dropdown-header text-primary font-weight-bolder d-flex justify-content-center align-items-center p-0">
+                          <i class="fa-solid fa-earth-americas"></i>&nbsp;
+                          Tour nước ngoài</h6>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#!LienHe.html">
+              <i class="material-icons opacity-6 me-2 text-md">article</i> Liên Hệ
+            </a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#!Blog.html" >
+              <i class="material-icons opacity-6 me-2 text-md">dashboard</i>Blog
+            </a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class=" opacity-6 me-2 text-md"><i class="fa-solid fa-user"></i></i> Tài khoản
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
+              <div class="d-none d-lg-block">
+                <ul class="list-group">
+                  <li class="nav-item list-group-item border-0 p-0">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="Đăngky.html">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center p-0">
+                      <i class="fa-solid fa-pen me-2"></i>Đăng ký</h6>
+                  </a>
+                  </li>
+                  <li class="nav-item list-group-item border-0 p-0">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="Đăngnhap.html">
+                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center p-0">
+                        <i class="fa-solid fa-arrow-right me-2"></i>
+                        Đăng nhập</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass opacity-6 me-2 text-md"></i> Search
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
+              <div class="d-none d-lg-block">
+                <div class="col-12 mx-auto">
+                  <div class="input-group input-group-dynamic mb-4">
+                    <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+                    <input class="form-control" placeholder="Search" type="text" >
+                  </div>
+                </div>
+              </div>
+            </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      </div>
+    </div>
+  </div>
+   <!-- End Navbar -->
+<header>
+  <div class="page-header min-vh-70" style="background-image: url('./assets/img/pg2.jpeg');" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+          <h1 class="text-white mb-4">INTERTOUR.VN</h1>
+          <p class="text-white opacity-8 lead pe-5 me-5">Intertour tự hào là đội ngũ với hơn 12 năm kinh nghiệm điều hành tour.
+            Chúng tôi đã đi qua 65 quốc gia, 270 thành phố và phục vụ hơn 120 đơn vị.</p>
+          <div class="buttons">
+            <button type="button" class="btn btn-white mt-4">Lịch tua</button>
+            <button type="button" class="btn btn-outline-light text-white shadow mt-4">Tư vấn ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
+<h3 class="text-gradient text-primary mb-0 text-center">Tour trong nước</h3>
+<section class="py-0">
+  <div class="container mt-0">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <a href="#">
+              <div class="card move-on-hover">
+                <img class="w-100" src="./assets/img/nhatrang.png" alt="aboutus">
+              </div>
+              <div class="mt-2 ms-2">
+                <h6 class="mb-0">Tour Nha Trang VinWonder</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mt-md-0 mt-5">
+            <a href="#">
+              <div class="card move-on-hover">
+                <img class="w-100" src="./assets/img/hoian.jpg" alt="contacus">
+              </div>
+              <div class="mt-2 ms-2">
+                <h6 class="mb-0">Tour Đà Nẵng – Hội An – Biển Mỹ Khê</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mt-md-3 mt-6">
+            <a href="#">
+              <div class="card move-on-hover">
+                <img class="w-100" src="/assets/img/hue.jpg" alt="signin">
+              </div>
+              <div class="mt-2 ms-2">
+                <h6 class="mb-0">Kinh Thành Huế</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mt-md-3 mt-6">
+            <a href="#">
+              <div class="card move-on-hover">
+                <img class="w-100" src="/assets/img/sapa-fansipan.jpg" alt="author">
+              </div>
+              <div class="mt-2 ms-2">
+                <h6 class="mb-0">Sapa-Fansipan</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto mt-md-0 mt-5">
+        <div class="position-sticky" style="top:100px !important">
+          <h4 class="">Khám phá những hành trình hấp dẫn từ miền Bắc đến miền Nam Việt Nam!  </h4>
+          <p class=" font-weight-normal">Với các tour du lịch độc đáo, du khách sẽ được trải nghiệm những điểm đến nổi tiếng và đặc sắc trên khắp cả nước, từ những ngôi đền cổ ở Hà Nội đến những bãi biển tuyệt đẹp ở Phú Quốc. Hãy cùng chúng tôi khám phá vẻ đẹp đa dạng và sự phong phú văn hóa của Việt Nam!"</p>
+          <a href="sanphampakkyy.html"  class="btn bg-gradient-primary mb-5 mb-sm-0">Xem thêm các tour hấp dẫn </a>
+        </div>
+        
+      </div>
+    </div>
+</section>
+
+
+<!-- -------- START Content Presentation Docs ------- -->
+<h3 class="text-gradient text-primary mb-0 text-center py-3">Tour quốc tế</h3>
+<div class="container mt-sm-0">
+  <div class="page-header py-0 py-md-5 my-sm-3 mb-3 border-radius-xl" style="background-image: url('./assets/img/mb.jpg');" loading="lazy">
+    <span class="mask bg-gradient-dark"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 ms-lg-5">
+          <h4 class="text-white">Khám phá những vùng đất xa xôi cùng  </h4>
+          <h1 class="text-white">Tour quốc tế</h1>
+          <p class="lead text-white opacity-8">Du lịch quốc tế mang đến những trải nghiệm độc đáo và không giới hạn, mở ra cơ hội khám phá thế giới và tạo ra những kỷ niệm vô giá.</p>
+            <a href="sanphamnuocngoai.html" class="btn bg-gradient-primary mb-5 mb-sm-0"><i class="fas fa-arrow-right text-sm ms-1"></i>  Xem thêm các tour hấp dẫn </a>
+           
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 move-on-hover">
+      <a href="">
+      <img src="./assets/img/japan.webp" alt="" class="img-thumbnail img-fluid mx-auto">
+      <h6 class="mb-0">Tour Châu Á</h6>
+    </a>
+    </div>
+    <div class="col-lg-4 mt-lg-0 mt-4 move-on-hover">
+      <a href="">
+      <img src="/assets/img/meo.jpg" alt="" class="img-thumbnail img-fluid mx-auto ">
+      <h6 class="mb-0">Tour Châu Mỹ</h6>
+    </a>
+    </div>
+    <div class="col-lg-4 mt-lg-0 mt-4 move-on-hover">
+      <a href="">
+      <img src="./assets/img/pháp.jpg" alt="" class="img-thumbnail img-fluid mx-auto">
+      <h6 class="mb-0">Tour Châu Âu</h6>
+    </a>
+    </div>
+  </div>
+</div>
+
+   
+
+<!-- -------- END Content Presentation Docs ------- -->
+
+
+
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12 my-auto">
+        <h3 class="text-gradient text-primary mb-0">Thiết kế tour riêng (Private Tour)</h3>
+        <h3> Chỉ riêng đoàn của bạn</h3>
+        <span class="pe-md-5 mb-4">
+          Bạn sẽ được lên chương trình bởi các Local Experiences Trip Planner. Hành trình được thiết kế riêng theo sở thích, nhu cầu, “Guu” đi chơi của bạn. Chi phí hợp lý và tiết kiệm.
+        </span>
+        <a href="#" class="btn bg-gradient-primary mb-5 mb-sm-0">Lên Plan ngay</a>
+      </div>
+      <div class="col-md-6 col-12  my-auto">
+        <a href="#">
+          <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/banernho.jpg" alt="Image">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+        <div class="rotating-card-container">
+          <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+            <div class="front front-background" style="background-image: url(./assets/img/1.jpg); background-size: cover;">
+              <div class="card-body py-7 text-center">
+                <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 class="text-white"> Đi du lịch nước ngoài 2024  <br /> ở đâu vui? </h3>
+                <p class="text-white opacity-8">Những ý tưởng để bắt đầu kế hoạch du lịch của bạn chỉ cần lưu lại những gì bạn yêu thích và gọi cho chúng tôi chuẩn bị</p>
+              </div>
+            </div>
+            <div class="back back-background" style="background-image: url(./assets/img/2.avif); background-size: cover;">
+              <div class="card-body pt-7 text-center">
+                <h3 class="text-white">INTERTOUR.VN</h3>
+                <p class="text-white opacity-8"> Luôn là bạn đồng hành số 1 với du khách trên mọi nẻo đường du lịch nước ngoài.</p>
+                <a href=""  class="btn btn-white btn-sm w-50 mx-auto mt-3">Xem ngay nào</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 ms-auto">
+        <div class="row justify-content-start">
+          <div class="col-md-6">
+            <div class="info">
+              <i class="material-icons text-gradient text-primary text-2xl"><i class="fa-solid fa-paper-plane"></i></i>
+              <h5 class="font-weight-bolder mt-3">12 Năm kinh nghiệm</h5>
+              <p class="pe-5">Với hơn 12 năm kinh nghiệm cùng đội ngũ HDV dày dạn kinh nghiệm.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info">
+              <i class="material-icons text-gradient text-primary text-2xl"><i class="fa-solid fa-globe"></i></i>
+              <h5 class="font-weight-bolder mt-3">270 Điểm đến trên thế giới</h5>
+              <p class="pe-3">Dừng chân tại hơn 270 điểm đến trên khắp thế giới và trải nghiệm những kỳ quan của hành tinh với Intertour.vn, nơi mà cuộc phiêu lưu bắt đầu!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mt-5">
+          <div class="col-md-6 mt-3">
+            <i class="material-icons text-gradient text-primary text-3xl"><i class="fa-solid fa-users-line"></i></i>
+            <h5 class="font-weight-bolder mt-3">Phục vụ hơn 120 đơn vị</h5>
+            <p class="pe-5">Chúng tôi hân hạnh đồng hành cùng hơn 120 đơn vị du lịch, đáp ứng mọi nhu cầu và mong muốn của khách hàng.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container-fluid gallery subscribe py-5">
+  <div class="container">
+      <!-- <div class="mx-auto text-center" style="max-width: 900px;">
+          <h5 class="subscribe-title px-3">Đăng ký</h5>
+          <h1 class="text-white mb-4">Bảng tin</h1>
+          <p class="text-white mb-5">Hãy đăng ký ngay để nhận được nhiều ưu đãi và biết thêm nhều thông tin về TravelVN một cách sớm nhất nhé!
+          </p>
+          <div class="position-relative mx-auto">
+              <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+              <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Gửi</button>
+          </div>
+      </div> -->
+      <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+        <div class="row g-2">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 ms-auto">
+        <h4 class="mb-1">Cảm ơn bạn rất nhiều!</h4>
+        <p class="lead mb-0">Chúng tôi luôn tự hào cung cấp những dịch vụ du lịch hàng đầu dành cho bạn</p>
+      </div>
+      <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+        <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" class="btn btn-twitter mb-0 me-2" target="_blank">
+          <i class="fab fa-twitter me-1"></i> Tweet
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=/product/material-kit" class="btn btn-facebook mb-0 me-2" target="_blank">
+          <i class="fab fa-facebook-square me-1"></i> Share
+        </a>
+        <a href="https://www.pinterest.com/pin/create/button/?url=/product/material-kit" class="btn btn-pinterest mb-0 me-2" target="_blank">
+          <i class="fab fa-pinterest me-1"></i> Pin it
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+
+</div>
+
+<div ng-view>  </div>
+  
+
+<footer class="footer pt-5 mt-5">
+  <div class="container">
+    <div class=" row">
+      <div class="col-md-3 mb-4 ms-auto">
+        <div>
+          <a href="index.html">
+            <img src="./assets/img/logo.png" class="mb-3 footer-logo" >
+          </a>
+          <h6 class="font-weight-bolder mb-4 text-white">INTERTOUR.VN</h6>
+        </div>
+        <div>
+          <ul class="d-flex flex-row ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link pe-1 text-white" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook text-lg opacity-8"></i>
+              </a>
+            </li>
+
+           
+            <li class="nav-item">
+              <a class="nav-link pe-1 text-white" href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-tiktok text-lg opacity-8"></i> 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1 text-white" href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube text-lg opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1 text-white" href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter text-lg opacity-8"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-sm text-white">Tài Nguyên</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="" target="_blank">
+              Tour trong nước
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="" target="_blank">
+                Tuor nước ngoài
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="" target="_blank">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+            <h6 class="text-sm text-white">Thông tin</h6>
+            <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="" target="_blank">
+                       Về chúng tôi
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="" target="_blank">
+                        Liên hệ
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="" target="_blank">
+                       Điều khoảng dịch vụ
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+  
+    
+    <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+        <div>
+            <h6 class="text-sm text-white">Liên Hệ</h6>
+            <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/knowledge-center/terms-of-service" target="_blank">
+                      Trụ sở: 115 Nguyễn Thái Bình, phường Nguyễn Thái Bình, Quận 1, Tp.HCM.
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/knowledge-center/privacy-policy" target="_blank">
+                        Email:anhduyvl2019@gamil.com
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/license" target="_blank">
+                      MS Doanh Nghiệp: 0305032648
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+      <div class="col-12">
+        <div class="text-center">
+          <p class="text-white my-4 text-sm font-weight-normal">
+            All rights reserved. Copyright © <script>document.write(new Date().getFullYear())</script> INTERTOUR.VN by ADuy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  var app=angular.module("myapp",["ngRoute"]);
+  app.config(function($routeProvider){
+      $routeProvider
+      .when("/",{templateUrl: "trangchu.html"})
+      .when("/sanpham",{templateUrl: "sanpham.html"})
+      .when("/Blog",{templateUrl: "Blog.html"})
+      .when("/Đăngky",{templateUrl: "Đăngky.html"})
+      .when("/LienHe",{templateUrl: "LienHe.html"})
+      .when("/LienHe",{templateUrl: "LienHe.html"})
+      .when("/LienHe",{templateUrl: "LienHe.html"})
+      .when("/LienHe",{templateUrl: "LienHe.html"})
+      .otherwise({templateUrl: "trangchu.html"})
+  })    
+</script>
+
+<!--   Core JS Files   -->
+<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+
+
+
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="./assets/js/plugins/countup.min.js"></script>
+
+
+<script src="./assets/js/plugins/choices.min.js"></script>
+
+
+
+<script src="./assets/js/plugins/prism.min.js"></script>
+<script src="./assets/js/plugins/highlight.min.js"></script>
+
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="./assets/js/plugins/rellax.min.js"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="./assets/js/plugins/tilt.min.js"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="./assets/js/plugins/choices.min.js"></script>
+
+<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+<!--  Google Maps Plugin    -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+<script src="./assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+
+  if (document.getElementById('state1')) {
+    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+  }
+  if (document.getElementById('state2')) {
+    const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+    if (!countUp1.error) {
+      countUp1.start();
+    } else {
+      console.error(countUp1.error);
+    }
+  }
+  if (document.getElementById('state3')) {
+    const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp2.error);
+    };
+  }
+</script>
+
+</body>
+
+</html>

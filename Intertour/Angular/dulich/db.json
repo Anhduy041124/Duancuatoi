@@ -1,0 +1,137 @@
+{
+    "products":
+    [
+        {
+            "id": 1,
+            "name": "Combo Hà Nội – Ninh Bình – Hạ Long",
+            "price": 17999000,
+            "image": "bac1.jpg",
+            "kind": "Trong nước"
+        },
+        {
+            "id": 2,
+            "name": "Viếng chùa Ninh Bình",
+            "price": 7999000,
+            "image": "chuabaidinh.jpg",
+            "kind": "Trong nước"
+        },
+        {
+            "id": 3,
+            "name": "Khám Phá động Hạ Long",
+            "price": 10999000,
+            "image": "dongthiencung.jpg",
+            "kind": "Trong nước"
+        },
+        {
+            "id": 4,
+            "name": "Lên đỉnh Fansipan",
+            "price": 13999000,
+            "image": "sapa-fansipan.jpg",
+            "kind": "Trong nước"
+        },
+        {
+            "id": 5,
+            "name": "Viếng Lăng Bác",
+            "price": 2999000,
+            "image": "lang-bac.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Sapa Núi Rừng Tây Bắc",
+            "price": 11999000,
+            "image": "nha-tho-da-sapa-min1.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Combo Hà Nội – Ninh Bình – Hạ Long",
+            "price": 17999000,
+            "image": "bac1.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Combo Hà Nội – Ninh Bình – Sapa",
+            "price": 17999000,
+            "image": "sapa-ban-cat-cat.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Combo Hà Nội – Ninh Bình – Hạ Long",
+            "price": 18999000,
+            "image": "chua-bai-dinh.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Tour Nhật Bản 6n5đ",
+            "price": 27999000,
+            "image": "nhat.webp",
+            "kind": "Nước ngoài"
+        },
+        {
+            "id": 11,
+            "name": "Tour Hàn Quốc 5n4đ",
+            "price": 19999000,
+            "image": "hanquoc.jpg",
+            "kind": "Nước ngoài"
+        },
+        {
+            "id": 12,
+            "name": "Tour Bangkok – Pattaya Thái Lan 5n4đ",
+            "price": 15999000,
+            "image": "ThaiLAn.jpg",
+            "kind": "Nước ngoài"
+        },
+        {
+            "id": 13,
+            "name": "Tour Mỹ 10n9đ",
+            "price": 48999000,
+            "image": "Mỹ.jpg",
+            "kind": "Nước ngoài"
+        },
+        {
+            "id": 14,
+            "name": "Tour Canada 6n5đ",
+            "price": 34999000,
+            "image": "canada.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Tour Anh Quốc 7N6Đ",
+            "price": 41999000,
+            "image": "anh.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Tour Pháp – Thụy Sỹ – Ý – Áo – Đức 11N8Đ",
+            "price": 47999000,
+            "image": "thuysi.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Tour Úc Sydney – Melbourne 6N5Đ",
+            "price": 25999000,
+            "image": "uc.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Tour Thượng Hải – Bắc Kinh – Hàng Châu Trung Quốc 6n5đ",
+            "price": 39999000,
+            "image": "ben-thuong-hai.jpg"
+        }
+    ],
+    "user":
+    [
+        {
+            "id": 1,
+            "username": "anhDuy",
+            "email": "anhduyvl2019@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": 2,
+            "username": "huyenTran",
+            "email": "huyenTranvl2019@gmail.com",
+            "password": "123456"
+        }
+    ]
+}
+    

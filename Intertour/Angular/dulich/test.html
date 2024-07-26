@@ -1,0 +1,16 @@
+<div class="col-md-6 col-lg-6 col-xl-4" ng-repeat="p in products | limitTo :9 :0">
+  <div class="rounded position-relative fruite-item">
+      <div class="fruite-img">
+          <img src="./assets/img/{{p.image}}" class="img-fluid w-100 rounded-top" alt="">
+      </div>
+      <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Hot <i class="fa-solid fa-fire"></i></div>
+      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+          <h4>{{p.name}}</h4>
+          <p>Giá 1 khách chỉ từ:</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-danger fs-5 fw-bold mb-0">{{p.price}}đ/N</p>
+              <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa-solid fa-eye"></i> Xem ngay</a>
+          </div>
+      </div>
+  </div>
+</div>

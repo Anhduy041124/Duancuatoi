@@ -1,0 +1,342 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": "ad2c",
+      "username": "tom",
+      "email": "tom@gmail.com",
+      "password": "Tom12345",
+      "repassword": "Tom12345"
+    },
+    {
+      "id": "10a5",
+      "username": "tam",
+      "email": "tam@gmail.com",
+      "password": "Tam12345",
+      "repassword": "Tam12345"
+    },
+    {
+      "id": "eaaf",
+      "username": "Lan",
+      "email": "lan@gmail.com",
+      "password": "Lan12345",
+      "role": "user"
+    },
+    {
+      "id": "1918",
+      "username": "Điệp",
+      "email": "diep@gmail.com",
+      "password": "$2a$10$0zNWSaXJq0mGgPfSV51MoOw98XZXO2VEI4QGScPWqAkkr9LjrNLsW",
+      "role": "user"
+    },
+    {
+      "id": "0689",
+      "username": "huong",
+      "email": "huong@gmail.com",
+      "password": "$2a$10$mvftb8oiyy4xoHWcLkk93uqekQwjeT0HHGsElukebRTTvEHJfSfVW",
+      "role": "user"
+    },
+    {
+      "id": "90f0",
+      "username": "trung",
+      "email": "trung@gmail.com",
+      "password": "$2a$10$so2l5GHV.37S3tiiPfrC4.zoeWxWbgb.RJP7I7efaXOFjCAVisSRG",
+      "role": "user"
+    },
+    {
+      "id": "e5f2",
+      "username": "Thầy Hiện",
+      "email": "Hien@gmail.com",
+      "password": "$2a$10$vofrQpdztkMd7ptoFbI3e.F4G4ky5V3/b6YtcjDETEFwxUJN4ZEYq",
+      "role": "user"
+    },
+    {
+      "id": "4a64",
+      "username": "anhduy24",
+      "email": "anhduyvl2019@gmail.com",
+      "password": "$2a$10$OigfMSZzbxeoidZsTEw7oeIKCsd8eZArYxfXBo4hbNDf9ojX4fDt6",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "DU LỊCH YẾN TỨ 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-29/272841073_4899065893494380_661601672026909933_n-5.jpg",
+      "price": 870000
+    },
+    {
+      "id": "p2",
+      "name": "TOUR DU LỊCH SÔNG HỒNG 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-09-27/163904081_816358685896107_942221368671689422_n-5.jpg",
+      "price": 750000
+    },
+    {
+      "id": "p3",
+      "name": "DU LỊCH CHÙA HƯƠNG 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-29/z3919138596799_6828b3ada3dbc808957b1c008d362911-5.jpg",
+      "price": 1750000
+    },
+    {
+      "id": "p4",
+      "name": "TOUR MAI CHÂY 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-29/mai-chau-ecolodge-mua-do-nuoc-2020-3--5.jpg",
+      "price": 750000
+    },
+    {
+      "id": "p5",
+      "name": "DU LỊCH TAM CHÚC - TRÀN AN 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-28/-4726235368897118208-o-5.jpg",
+      "price": 950000
+    },
+    {
+      "id": "p6",
+      "name": "TOUR HOA LƯ - TRÀN AN/TAM CỐC - HANG MÚA 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2019-11-04/hang-mua-tam-coc-5.jpg",
+      "price": 790000
+    },
+    {
+      "id": "p7",
+      "name": "DU LỊCH HANG MÚA 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2019-01-07/hang-mua-ninh-binh_song-hong-tourist-5.jpg",
+      "price": 790000
+    },
+    {
+      "id": "p8",
+      "name": "DU LỊCH HANG MÚA - TAM CỐC 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2019-01-07/tam-coc_song-hong-tourist-5.jpg",
+      "price": 800000
+    },
+    {
+      "id": "p9",
+      "name": "DU LỊCH MÁY ĐÍNH - TRÀNG AN 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-28/-getpaidstock-5.jpg",
+      "price": 750000
+    },
+    {
+      "id": "p10",
+      "name": "TOUR HOA LƯ - TAM CỐC 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2022-11-25/281356024_7551841601523935_8182288132477437686_n-5.jpg",
+      "price": 650000
+    },
+    {
+      "id": "p11",
+      "name": "CHÙA BA VÀNG - YÊN TÚ 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2020-01-06/chua-ba-vang-5.jpg",
+      "price": 870000
+    },
+    {
+      "id": "p12",
+      "name": "ĐỀN CỨA ÔNG - CHÙA CÁI BẦU - CHÙA BA VÀNG 1 NGÀY",
+      "kind": "tour 1 ngày",
+      "image": "https://songhongtourist.vn/upload/2020-01-06/chua-ba-vang-5.jpg",
+      "price": 650000
+    },
+    {
+      "id": "p13",
+      "name": "DU LỊCH SAPA 2 NGÀY 3 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2022-12-05/z3934544909044_bd4aa622b1ba0711b4ebdaf7ef87d28c-5.jpg",
+      "price": 1550000
+    },
+    {
+      "id": "p14",
+      "name": "DU LỊCH HÀ KHẤU SAPA 3 NGÀY 2 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2022-11-23/8b44-0554-4412-b405-e1ac05769a3f-5.jpg",
+      "price": 2090000
+    },
+    {
+      "id": "p15",
+      "name": "DU LỊCH SAPA 3 NGÀY 4 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2022-11-25/-getpaidstock-5.jpg",
+      "price": 1390000
+    },
+    {
+      "id": "p16",
+      "name": "DU LỊCH SAPA 2 NGÀY 3 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2022-12-05/-getpaidstock-5.jpg",
+      "price": 1450000
+    },
+    {
+      "id": "p17",
+      "name": "DU LỊCH SAPA 3 NGÀY 2 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2017-06-22/du-lich-sapa-3-ngay-4.jpg",
+      "price": 2250000
+    },
+    {
+      "id": "p18",
+      "name": "DU LỊCH SAPA 2 NGÀY 1 ĐÊM",
+      "kind": "tour sapa",
+      "image": "https://songhongtourist.vn/upload/2019-08-28/64399031_1359699414180280_1148780838305923072_n-5.jpg",
+      "price": 1250000
+    },
+    {
+      "id": "p19",
+      "name": "DU LỊCH MỘC CHÂU 2 NGÀY 1 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-16/z3885067729149_5b41cd9b57d710636516b27d604bcb07-5.jpg",
+      "price": 1150000
+    },
+    {
+      "id": "p20",
+      "name": "CÔ TÔ 3 NGÀY 2 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-16/dao-co-to-5.jpg",
+      "price": 2550000
+    },
+    {
+      "id": "p21",
+      "name": "DU LỊCH FANSEPAN 2 NGÀY 3 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-17/vno-fanxipan3-5.jpg",
+      "price": 1650000
+    },
+    {
+      "id": "p22",
+      "name": "TOUR DU LỊCH HÀ NỘI - BÁT TRÀNG VILLAGE 1 NGÀY",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2017-04-03/tour-bat-trang-ha-noi-4.jpg",
+      "price": 650000
+    },
+    {
+      "id": "p23",
+      "name": "DU LỊCH FANSEPAN 3 NGÀY 4 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-17/z3888495107812_57873a0620645caf8f2bf3f64f2514c5-5.jpg",
+      "price": 2250000
+    },
+    {
+      "id": "p24",
+      "name": "TOUR HỒ NÚI CỐC 1 NGÀY",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-21/ho-nui-coc-thai-nguyen-5.jpg",
+      "price": 530000
+    },
+    {
+      "id": "p25",
+      "name": "TOUR LÀNG CỐ ĐƯỜNG LÂM 1 NGÀY",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-17/257381957-1769504896573974-6141244143265703677-n-5.jpg",
+      "price": 900000
+    },
+    {
+      "id": "p26",
+      "name": "TOUR THUNG NAM 1 NGÀY",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-16/z3885368987340_b8215b98cad4c2d7ccefe44078e919b1-5.jpg",
+      "price": 600000
+    },
+    {
+      "id": "p27",
+      "name": "TOUR DU LỊCH TÂY THIÊN TAM ĐẢO 2 NGÀY 1 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2018-05-23/tay-thien-tam-dao-4.jpg",
+      "price": 1550000
+    },
+    {
+      "id": "p28",
+      "name": "MÙ CANG CHẢI 2 NGÀY 1 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2018-07-25/tour-mu-cang-chai-2-ngay-5.jpg",
+      "price": 1650000
+    },
+    {
+      "id": "p29",
+      "name": "TOUR DU LỊCH HÒA BÌNH 2 NGÀY 1 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2016-06-01/du-lich-song-da-4.jpg",
+      "price": 1390000
+    },
+    {
+      "id": "p30",
+      "name": "DU LỊCH QUANG LẠN 2 NGÀY 1 ĐÊM",
+      "kind": "miền bắc",
+      "image": "https://songhongtourist.vn/upload/2022-11-17/trungduc-photographer5-5.jpg",
+      "price": 1660000
+    },
+    {
+      "id": "p31",
+      "name": "DU LỊCH HẠ LONG 3 NGÀY 2 ĐÊM",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2022-12-08/-getpaidstock-5.jpg",
+      "price": 3290000
+    },
+    {
+      "id": "p32",
+      "name": "TOUR DU LỊCH DU THUYỀN HẠ LONG 2 NGÀY 1 ĐÊM",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2022-11-14/z3879855812811_48d5d112ce626923a7ab9f89bcdfe459-5.jpg",
+      "price": 1990000
+    },
+    {
+      "id": "p33",
+      "name": "HẠ LONG TRỌN GÓI 2 NGÀY 1 ĐÊM",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2022-11-14/du-thuye%CC%82%CC%80n-heritage--5.jpeg",
+      "price": 2800000
+    },
+    {
+      "id": "p34",
+      "name": "TOUR HẠ LONG 1 NGÀY",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2022-11-16/-getpaidstock-5.jpg",
+      "price": 950000
+    },
+    {
+      "id": "p35",
+      "name": "TOUR DU LỊCH CÁT BÀ 3 GNAFY 2 ĐÊM",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2022-11-14/z3879913365784_b32c22d0aedbf24c0d26a6a56219a9b4-5.jpg",
+      "price": 3650000
+    },
+    {
+      "id": "p36",
+      "name": "TOUR DU LỊCH CÁT BÀ 2 NGÀY 1 ĐÊM",
+      "kind": "hạ long",
+      "image": "https://songhongtourist.vn/upload/2017-06-22/tour-ha-long-cat-ba-2-ngay-4.jpg",
+      "price": 1850000
+    },
+    {
+      "id": "p37",
+      "name": "TOUR DU LỊCH SÔNG HỒNG 1 NGÀY",
+      "kind": "hot",
+      "image": "https://songhongtourist.vn/upload/2022-09-27/163904081_816358685896107_942221368671689422_n-5.jpg",
+      "price": 9990000
+    },
+    {
+      "id": "p38",
+      "name": "DU LỊCH FANSEPAN 3 NGÀY 4 ĐÊM",
+      "kind": "hot",
+      "image": "https://songhongtourist.vn/upload/2022-11-17/z3888495107812_57873a0620645caf8f2bf3f64f2514c5-5.jpg",
+      "price": 8990000
+    },
+    {
+      "id": "p39",
+      "name": "TOUR DU LỊCH 4 NGÀY 3 ĐÊM",
+      "kind": "hot",
+      "image": "https://songhongtourist.vn/upload/2020-02-25/67412807_2312939255420238_8334016908378505216_n-5.jpg",
+      "price": 7850000
+    }
+  ]
+}

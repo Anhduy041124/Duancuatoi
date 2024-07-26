@@ -1,0 +1,363 @@
+
+
+
+<body class="index-page bg-dark">
+  
+<header>
+  <div class="page-header min-vh-70" style="background-image: url('./assets/img/pg3.jpeg');" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+          <h1 class="text-white mb-4">INTERTOUR.VN</h1>
+          <p class="text-white opacity-8 lead pe-5 me-5">Intertour tự hào là đội ngũ với hơn 12 năm kinh nghiệm điều hành tour.
+            Chúng tôi đã đi qua 65 quốc gia, 270 thành phố và phục vụ hơn 120 đơn vị.</p>
+          <div class="buttons">
+            <button type="button" class="btn btn-white mt-4">Lịch tua</button>
+            <button type="button" class="btn btn-outline-light text-white shadow mt-4">Tư vấn ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
+    <div class="container-fluid fruite py-0">
+        <div class="container py-0">
+            <h1 class="mb-4 text-primary">Tour Quốc Tế</h1>
+            <div class="row g-4">
+                <div class="col-lg-12">
+                    <div class="row g-4">
+                        <div class="col-0"></div>
+                        <div class="col-xl-3">
+                            <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                                <label for="fruits">Châu Lục</label>
+                                <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
+                                    <option value="volvo">Châu Á</option>
+                                    <option value="saab">Châu Âu</option>
+                                    <option value="opel">Châu Mỹ</option>
+                                    <option value="opel">Châu Đại Dương</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-9">
+                            <div class="row g-4 justify-content-center" >
+                                <div class="col-md-6 col-lg-6 col-xl-4" ng-repeat="p in products | limitTo :9 : 9">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="./assets/img/{{p.image}}" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Hot <i class="fa-solid fa-fire"></i></div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>{{p.name}}</h4>
+                                            <p>Giá 1 khách chỉ từ:</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-danger fs-5 fw-bold mb-0">{{p.price | number:0}}đ/N</p>
+                                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa-solid fa-eye"></i> Xem ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                
+                                
+                                <section class="py-7">
+                                    <div class="container">
+                                      <div class="row justify-space-between py-2">
+                                        <div class="col-lg-4 mx-auto">
+                                          <ul class="pagination pagination-primary m-4">
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;" aria-label="Previous">
+                                                <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_left</i></span>
+                                              </a>
+                                            </li>
+                                            <li class="page-item active">
+                                              <a class="page-link" href="javascript:;">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;">4</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;">5</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="javascript:;" aria-label="Next">
+                                                <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_right</i></span>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="row g-4">
+                              <div class="col-lg-12">
+                                  <div class="mb-3">
+                                      <h4>Tổng hợp tour</h4>
+                                      <ul class="list-unstyled fruite-categorie">
+                                          <li>
+                                              <div class="d-flex justify-content-between fruite-name">
+                                                  <a href="#">Tour Châu Á</a>
+                                                  <span>(22)</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="d-flex justify-content-between fruite-name">
+                                                  <a href="#">Tour Châu Âu</a>
+                                                  <span>(19)</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="d-flex justify-content-between fruite-name">
+                                                  <a href="#">Tour Châu Mỹ</a>
+                                                  <span>(12)</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="d-flex justify-content-between fruite-name">
+                                                  <a href="#">Tour Châu Đại Dương</a>
+                                                  <span>(10)</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12">
+                                  <div class="mb-3">
+                                      <h4 class="mb-2">Giá Tiền</h4>
+                                      <input type="range" class="form-range w-100" id="rangeInput" name="rangeInput" min="500000" max="50000000" value="500000" oninput="amount.value=rangeInput.value">
+                                      <output id="amount" name="amount" min-velue="0" max-value="500" for="rangeInput">500000</output>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12">
+                                  <div class="mb-3">
+                                      <h4>Hướng Dẫn Viên <i class="fa-solid fa-people-pulling"></i></h4>
+                                      <div class="mb-2">
+                                          <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                                          <label for="Categories-1">Nam</label>
+                                      </div>
+                                      <div class="mb-2">
+                                          <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                                          <label for="Categories-2">Nữ</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12">
+                                  <h4 class="mb-3">Tour cực hot <i class="fa-solid fa-fire"></i></h4>
+                                  <div class="d-flex align-items-center justify-content-start">
+                                      <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                          <img src="./assets/img/ThaiLAn.jpg" class="img-fluid rounded" alt="">
+                                      </div>
+                                      <div>
+                                          <h6 class="mb-2">Tour Bangkok Thái Lan </h6>
+                                          <div class="d-flex mb-2">
+                                              <h5 class="text-danger">15.999.000đ</h5>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-start">
+                                      <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                          <img src="./assets/img/Mỹ.jpg" class="img-fluid rounded" alt="">
+                                      </div>
+                                      <div>
+                                          <h6 class="mb-2">Tour Mỹ</h6>
+                                          <div class="d-flex mb-2">
+                                              <h5 class="text-danger">48.999.000đ</h5>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-start">
+                                      <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                          <img src="./assets/img/nhat.webp" class="img-fluid rounded" alt="">
+                                      </div>
+                                      <div>
+                                          <h6 class="mb-2">Tour Nhật</h6>
+                                          <div class="d-flex mb-2">
+                                              <h5 class="text-danger">27.999.000đ</h5>
+                                            
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex justify-content-center my-4">
+                                      <a href="#" class="btn border border-secondary  py-3 rounded-pill text-primary w-100">Xem ngay</a>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12">
+                                  <div class="position-relative">
+                                      <img src="./assets/img/1.jpg" class="img-fluid w-100 rounded" alt="">
+                                      <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+                                          <!-- <h3 class="text-secondary fw-bold">Em <br> Đẹp <br> Lắm</h3> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="my-5 ">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+              <div class="rotating-card-container">
+                <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+                  <div class="front front-background" style="background-image: url(./assets/img/1.jpg); background-size: cover;">
+                    <div class="card-body py-7 text-center">
+                      <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                      <h3 class="text-white"> Đi du lịch nước ngoài 2024  <br /> ở đâu vui? </h3>
+                      <p class="text-white opacity-8">Những ý tưởng để bắt đầu kế hoạch du lịch của bạn chỉ cần lưu lại những gì bạn yêu thích và gọi cho chúng tôi chuẩn bị</p>
+                    </div>
+                  </div>
+                  <div class="back back-background" style="background-image: url(./assets/img/2.avif); background-size: cover;">
+                    <div class="card-body pt-7 text-center">
+                      <h3 class="text-white">INTERTOUR.VN</h3>
+                      <p class="text-white opacity-8"> Luôn là bạn đồng hành số 1 với du khách trên mọi nẻo đường du lịch nước ngoài.</p>
+                      <a href=""  class="btn btn-white btn-sm w-50 mx-auto mt-3">Xem ngay nào</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-auto">
+              <div class="row justify-content-start">
+                <div class="col-md-6">
+                  <div class="info">
+                    <i class="material-icons text-gradient text-primary text-2xl"><i class="fa-solid fa-paper-plane"></i></i>
+                    <h5 class="font-weight-bolder mt-3">12 Năm kinh nghiệm</h5>
+                    <p class="pe-5">Với hơn 12 năm kinh nghiệm cùng đội ngũ HDV dày dạn kinh nghiệm.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info">
+                    <i class="material-icons text-gradient text-primary text-2xl"><i class="fa-solid fa-globe"></i></i>
+                    <h5 class="font-weight-bolder mt-3">270 Điểm đến trên thế giới</h5>
+                    <p class="pe-3">Dừng chân tại hơn 270 điểm đến trên khắp thế giới và trải nghiệm những kỳ quan của hành tinh với Intertour.vn, nơi mà cuộc phiêu lưu bắt đầu!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-start mt-5">
+                <div class="col-md-6 mt-3">
+                  <i class="material-icons text-gradient text-primary text-3xl"><i class="fa-solid fa-users-line"></i></i>
+                  <h5 class="font-weight-bolder mt-3">Phục vụ hơn 120 đơn vị</h5>
+                  <p class="pe-5">Chúng tôi hân hạnh đồng hành cùng hơn 120 đơn vị du lịch, đáp ứng mọi nhu cầu và mong muốn của khách hàng.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<div class="container-fluid gallery subscribe py-5">
+  <div class="container">
+      <!-- <div class="mx-auto text-center" style="max-width: 900px;">
+          <h5 class="subscribe-title px-3">Đăng ký</h5>
+          <h1 class="text-white mb-4">Bảng tin</h1>
+          <p class="text-white mb-5">Hãy đăng ký ngay để nhận được nhiều ưu đãi và biết thêm nhều thông tin về TravelVN một cách sớm nhất nhé!
+          </p>
+          <div class="position-relative mx-auto">
+              <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+              <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Gửi</button>
+          </div>
+      </div> -->
+      <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+        <div class="row g-2">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="gallery-item h-100">
+                    <img src="./assets/img/gallery-10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 ms-auto">
+        <h4 class="mb-1">Cảm ơn bạn rất nhiều!</h4>
+        <p class="lead mb-0">Chúng tôi luôn tự hào cung cấp những dịch vụ du lịch hàng đầu dành cho bạn</p>
+      </div>
+      <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+        <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" class="btn btn-twitter mb-0 me-2" target="_blank">
+          <i class="fab fa-twitter me-1"></i> Tweet
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=/product/material-kit" class="btn btn-facebook mb-0 me-2" target="_blank">
+          <i class="fab fa-facebook-square me-1"></i> Share
+        </a>
+        <a href="https://www.pinterest.com/pin/create/button/?url=/product/material-kit" class="btn btn-pinterest mb-0 me-2" target="_blank">
+          <i class="fab fa-pinterest me-1"></i> Pin it
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+
+</div>
+
+
+  
+
